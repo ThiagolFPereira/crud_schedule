@@ -45,7 +45,7 @@ class ContatoRequest extends FormRequest
                 case "PUT":
                     return [
                         "name" => 'required|max:100',
-                        "mail" => 'required|max:200|unique:contatos,email'.$this->id,
+                        "mail" => 'mail|required|max:200|unique:contatos,email'.$this->id,
                         "address" => 'required',
                         "number" => 'required',
                         "neighborhood" => 'required',
@@ -62,5 +62,14 @@ class ContatoRequest extends FormRequest
 
                     default:break;
         }
+    }
+
+    public function messages()
+    {
+        return [
+            "name.required" => 'O campo senha é obrigatório',
+            "mail.mail" => 'O campo email é obrigatório',
+
+        ];
     }
 }

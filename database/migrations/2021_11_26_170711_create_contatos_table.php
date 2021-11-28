@@ -22,8 +22,8 @@ class CreateContatosTable extends Migration
             $table->string('neighborhood', 160);
             $table->string('city', 50);
             $table->string('state', 30);
-            $table->integer('zip');
-            $table->integer('phone');
+            $table->string('zip');
+            $table->string('phone');
             $table->string('avatar', 200)->nullable();
             $table->timestamps();
         });

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4842c22e789d247c4b660e69490545f",
+    "content-hash": "8996af38f603d875ac6d2a1e12cb0254",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -635,6 +635,66 @@
                 }
             ],
             "time": "2021-11-21T21:41:47+00:00"
+        },
+        {
+            "name": "guiliredu/laravel-seed-migration-estados-cidades-brasil",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guiliredu/laravel-seed-migration-estados-cidades-brasil.git",
+                "reference": "48a728650c2348f0794b4181ffff24a61eef0a0f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guiliredu/laravel-seed-migration-estados-cidades-brasil/zipball/48a728650c2348f0794b4181ffff24a61eef0a0f",
+                "reference": "48a728650c2348f0794b4181ffff24a61eef0a0f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": ">=6.0",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0",
+                "phpunit/phpunit": "^8.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Guiliredu\\BrazilianCityMigrationSeed\\BrazilianCityMigrationSeedServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Guiliredu\\BrazilianCityMigrationSeed\\": "src",
+                    "Guiliredu\\BrazilianCityMigrationSeed\\Database\\Seeds\\": "database/seeds"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Redu",
+                    "email": "guiliredu@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Pacote com informações de todas cidades e estados brasileiros.",
+            "homepage": "https://github.com/guiliredu/laravel-seed-migration-estados-cidades-brasil",
+            "keywords": [
+                "guiliredu",
+                "laravel-seed-migration-estados-cidades-brasil",
+                "seed cidades brasileiras"
+            ],
+            "support": {
+                "issues": "https://github.com/guiliredu/laravel-seed-migration-estados-cidades-brasil/issues",
+                "source": "https://github.com/guiliredu/laravel-seed-migration-estados-cidades-brasil/tree/1.0.3"
+            },
+            "time": "2020-11-10T12:34:19+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
